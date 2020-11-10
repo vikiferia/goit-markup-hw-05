@@ -52,15 +52,19 @@
     </header>
 
     <main>
+
+
         <!--Секция главной шапки с кнопкой Заказа Герой-->
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 </div>
-                <button type="button" class="button">Заказать услугу</button>
+                <button data-modal-open type="button" class="button">Заказать услугу</button>
             </div>
+
         </section>
+
 
         <section class="section-features">
             <div class="container features-container">
@@ -408,6 +412,19 @@
         </div>
     </footer>
 
+    <!--Модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button-modal-close" data-modal-close>
+                <svg class="modal-close-svg">
+                    <use href="./images/sprite.svg#closeblack"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 
